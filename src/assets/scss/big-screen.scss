@@ -1,0 +1,66 @@
+.screen_title {
+    background: url("../../assets/big-screen/title_bg.png") no-repeat center;
+    background-size: 100% 100%;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 17px;
+    height: 54px;
+    line-height: 66px;
+    box-sizing: border-box;
+    font-weight: bold;
+    overflow: hidden;
+    text-shadow: rgb(0 117 255) 0px 0px 16px;
+}
+
+.minTitle {
+    font-size: 12px;
+    text-shadow: rgb(0 117 255) 0px 0px 16px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+@keyframes myfirst {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes myfirst
+
+/* Safari 与 Chrome */
+    {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.lamp {
+    display: inline-block;
+    width: 18px;
+    height: 15px;
+    background: url("../../assets/big-screen/lamp.png") no-repeat center;
+    background-size: 100%;
+
+
+}
+
+
+
+.breathing_lamp {
+    opacity: 1;
+    animation-timing-function: linear;
+    animation: myfirst 2s;
+    -webkit-animation: myfirst 2s;
+    /* Safari 与 Chrome */
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate
+}
